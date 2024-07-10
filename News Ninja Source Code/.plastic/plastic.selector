@@ -1,0 +1,3 @@
+rep "Prototype - combo@sultan_4135967@cloud"
+  path "/"
+    smartbranch "/frontend"         

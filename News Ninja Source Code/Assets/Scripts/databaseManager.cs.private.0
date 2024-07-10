@@ -1,0 +1,532 @@
+using UnityEngine;
+using Mono.Data.Sqlite;
+using System.Data;
+using System;
+using Object = System.Object;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.Networking;
+using Newtonsoft.Json;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+public class databaseManager : MonoBehaviour
+{
+    string createUserURL = "http://data.game/api/createUser";
+    string getSentencePackage = "http://data.game/api/getSentencePackage";
+    string getTopicsURL = "http://data.game/api/getTopics";
+    string getTopicsProgress = "http://data.game/api/getDailyTopics";
+    string createURL = "";
+    string createWithColumsURL = "http://165.232.114.94/api/createWithColumns";
+    string updateOrInsertURL = "http://165.232.114.94/api/updateOrInsert";
+    string updateURL = "http://165.232.114.94/api/updateValue";
+    string singleSelectURL = "http://165.232.114.94/api/singleSelect";
+    string randomQuestionURL = "http://165.232.114.94/api/randomQuestions";
+    string calculateBiasURL = "http://165.232.114.94/api/calculateBias";
+    string incrementURL = "http://165.232.114.94/api/increment";
+    string getDailyTopicsURL = "http://165.232.114.94/api/dailyTopics";
+    string getWordsURL = "http://165.232.114.94/api/getWords";
+
+    public string[] wordsAnswer;
+    public static databaseManager instance;
+    private string conn;
+    private IDbConnection dbconn;
+    private IDbCommand dbcmd;
+    private IDataReader reader;
+    public string result = "";
+
+    public string[] questionOnly;
+    public string[] indicesOnly;
+
+    public string[] answers;
+    public string[] Topics;
+    public string[] TopicsDailyProgress;
+    void Start()
+    {
+        StartCoroutine(createUser("", "", 0, 0, 0, "", 0));
+        StartCoroutine(getTopics());
+        StartCoroutine(getDailyTopicsprogress());
+        StartCoroutine(getSentences("abortion"));
+    }
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    public IEnumerator createUser(string user_id, string achievements, int level, int local_rank, int money, string slant, int game_finished)
+    {
+
+
+
+        WWWForm form = new WWWForm();
+        form.AddField("id", SystemInfo.deviceUniqueIdentifier);
+        form.AddField("user_id", user_id);
+        form.AddField("achievements", achievements);
+        form.AddField("level", level);
+        form.AddField("local_rank", local_rank);
+        form.AddField("money", money);
+        form.AddField("slant", slant);
+        form.AddField("game_finished", game_finished);
+        UnityWebRequest www = UnityWebRequest.Post(createUserURL, form);
+        yield return www.SendWebRequest();
+        Debug.Log(www.downloadHandler.text);
+    }
+
+    public IEnumerator getTopics()
+    {
+
+
+        UnityWebRequest www = UnityWebRequest.Get(getTopicsURL);
+        yield return www.SendWebRequest();
+        string topics = www.downloadHandler.text;
+        string[] topicsArray = topics.Split('|');
+        Topics = topicsArray.Take(topicsArray.Count() - 1).ToArray();
+        Debug.Log(Topics[0]);
+        Debug.Log(Topics[1]);
+    }
+
+    public IEnumerator getDailyTopicsprogress()
+    {
+
+
+        WWWForm form = new WWWForm();
+        form.AddField("user_id", SystemInfo.deviceUniqueIdentifier);
+        UnityWebRequest www = UnityWebRequest.Post(getTopicsProgress, form);
+        yield return www.SendWebRequest();
+        string topicsDone = www.downloadHandler.text;
+        TopicsDailyProgress = topicsDone.Split('|');
+        TopicsDailyProgress = TopicsDailyProgress.Take(TopicsDailyProgress.Count() - 1).ToArray();
+    }
+    public IEnumerator create(string tableName, Object[] values)
+
+    {
+        Debug.Log(tableName);
+        Debug.Log(values);
+        Debug.Log(createURL);
+
+        // Debug.Log(id);
+        // WWWForm form = new WWWForm();
+        // form.AddField("id", id);
+
+        var data = new object[] {
+            new { tablename = tableName },
+            new { values = values},
+        };
+        var jsonData = JsonConvert.SerializeObject(data);
+
+        UnityWebRequest request = UnityWebRequest.Put(createURL, jsonData);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+        Debug.Log(request.downloadHandler.text);
+
+        // UnityWebRequest www = UnityWebRequest.Post(URL, form);
+        // yield return www.SendWebRequest();
+    }
+
+    public IEnumerator createWithColumns(string tableName, string[] cols, Object[] values)
+    {
+        // Debug.Log(id);
+        // WWWForm form = new WWWForm();
+        // form.AddField("id", id);
+
+        var data = new object[] {
+            new { tablename = tableName },
+            new { cols = cols },
+            new { values = values},
+        };
+        var jsonData = JsonConvert.SerializeObject(data);
+
+        UnityWebRequest request = UnityWebRequest.Put(createWithColumsURL, jsonData);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+
+        // UnityWebRequest www = UnityWebRequest.Post(URL, form);
+        // yield return www.SendWebRequest();
+    }
+    public IEnumerator updateOrInsert(string tableName, string[] uniqueCols, string changedValue, Object[] values)
+    {
+        // Debug.Log(id);
+        // WWWForm form = new WWWForm();
+        // form.AddField("id", id);
+
+        var data = new object[] {
+            new { tablename = tableName },
+            new { uniqueCols = uniqueCols },
+            new { changedValue = changedValue },
+            new { values = values},
+        };
+        var jsonData = JsonConvert.SerializeObject(data);
+
+        UnityWebRequest request = UnityWebRequest.Put(updateOrInsertURL, jsonData);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+
+        // UnityWebRequest www = UnityWebRequest.Post(URL, form);
+        // yield return www.SendWebRequest();
+    }
+
+
+    //insert into table
+    // public void InsertInto(string tableName, Object[] values)
+    // { // basic Insert with just values
+    //     openConnection();
+    //     string query;
+
+    //     query = "INSERT INTO " + tableName + " VALUES (";
+
+    //     for (var i = 0; i < values.Length; i++)
+    //     {
+    //         if (i == 0 && values[i].GetType().Equals(typeof(Int32)))
+    //         {
+    //             query += "" + values[i];
+    //         }
+    //         else if (i == 0 && values[i].GetType().Equals(typeof(String)))
+    //         {
+    //             query += "'" + values[i] + "'";
+    //         }
+    //         else if (i != 0 && values[i].GetType().Equals(typeof(Int32)))
+    //         {
+    //             query += "," + values[i];
+    //         }
+    //         else
+    //         {
+    //             query += ", '" + values[i] + "'";
+    //         }
+    //     }
+    //     query += ")";
+    //     dbcmd = dbconn.CreateCommand();
+    //     dbcmd.CommandText = query;
+    //     reader = dbcmd.ExecuteReader();
+    //     closeConnection();
+    // }
+
+    public IEnumerator updateValue(string tableName, string col, Object[] values, string condition, string conditionValue)
+    { // Specific insert with col and values
+
+
+        var data = new object[] {
+            new { tablename = tableName },
+            new { col = col},
+            new { values = values},
+            new { condition = condition},
+            new { conditionValue = conditionValue},
+        };
+        var jsonData = JsonConvert.SerializeObject(data);
+
+        UnityWebRequest request = UnityWebRequest.Put(updateURL, jsonData);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+
+
+        // openConnection();
+        // string query;
+        // query = "UPDATE  " + tableName + " SET ";
+        // for (var i = 0; i < values.Length; i++)
+        // {
+        //     if (i == 0 && values[i].GetType().Equals(typeof(Int32)))
+        //     {
+        //         query += col[0] + " = " + values[i];
+        //     }
+        //     else if (i == 0 && values[i].GetType().Equals(typeof(String)))
+        //     {
+        //         query += col[0] + " = " + "'" + values[i] + "'";
+        //     }
+        //     else if (i != 0 && values[i].GetType().Equals(typeof(Int32)))
+        //     {
+        //         query += " , " + col[0] + " = " + values[i];
+        //     }
+        //     else
+        //     {
+        //         query += " , " + col[0] + " = " + ", '" + values[i] + "'";
+        //     }
+        // }
+        // query += " WHERE " + condition + " = '" + conditionValue + "'";
+        // dbcmd = dbconn.CreateCommand();
+        // dbcmd.CommandText = query;
+        // reader = dbcmd.ExecuteReader();
+        // closeConnection();
+    }
+
+    public IEnumerator singleselect(string tableName, String col, string condition, string conditionValue)
+    {
+
+
+        // Debug.Log(id);
+        WWWForm form = new WWWForm();
+        form.AddField("tableName", tableName);
+        form.AddField("col", col);
+        form.AddField("condition", condition);
+        form.AddField("conditionValue", conditionValue);
+
+        UnityWebRequest www = UnityWebRequest.Post(singleSelectURL, form);
+        yield return www.SendWebRequest();
+        result = www.downloadHandler.text;
+
+
+
+
+
+
+
+
+        // Selects a single Item
+        // openConnection();
+        // string query;
+        // query = "SELECT " + col + " FROM " + tableName + " WHERE " + condition + " = '" + conditionValue + "'";
+        // dbcmd = dbconn.CreateCommand();
+        // dbcmd.CommandText = query;
+        // reader = dbcmd.ExecuteReader();
+        // string result = "";
+
+        // while (reader.Read())
+        // {
+        //     result = reader.GetInt32(0).ToString(); // Fill array with all matches
+
+
+        // }
+        // closeConnection();
+        // return result;
+    }
+
+    // public Dictionary<int, object[]> generateQuestionsArray()
+    // {
+    //     openConnection();
+    //     string query;
+    //     query = "SELECT id , Sentence FROM Sentences ORDER BY RANDOM() LIMIT 10";
+    //     dbcmd = dbconn.CreateCommand();
+    //     dbcmd.CommandText = query;
+    //     reader = dbcmd.ExecuteReader();
+    //     Dictionary<int, object[]> questions = new Dictionary<int, object[]>();
+    //     int i = 0;
+    //     while (reader.Read())
+    //     {
+    //         questions.Add(i, new object[] { reader.GetInt32(0), reader.GetString(1) });
+    //         i++;
+
+
+    //     }
+    //     closeConnection();
+    //     return questions;
+    // }
+
+    public IEnumerator generateQuestions()
+    {
+
+        // Debug.Log(id);
+
+        UnityWebRequest www = UnityWebRequest.Get(randomQuestionURL);
+        yield return www.SendWebRequest();
+        string questions = www.downloadHandler.text;
+        string[] questionsArray = questions.Split('|');
+        questionsArray = questionsArray.Take(questionsArray.Count() - 1).ToArray();
+        questionOnly = questionsArray.Where((x, i) => i % 2 == 0).ToArray();
+        indicesOnly = questionsArray.Where((x, i) => i % 2 != 0).ToArray();
+
+        // foreach (string q in questionOnly)
+        // {
+        //     Debug.Log(q);
+        // }
+
+        // foreach (string i in indicesOnly)
+        // {
+        //     Debug.Log(i);
+        // }
+    }
+
+    public IEnumerator increment(string tableName, String col, string condition, string conditionValue)
+    {
+
+
+        // Debug.Log(id);
+        WWWForm form = new WWWForm();
+        form.AddField("tableName", tableName);
+        form.AddField("col", col);
+        form.AddField("condition", condition);
+        form.AddField("conditionValue", conditionValue);
+        UnityWebRequest www = UnityWebRequest.Post(incrementURL, form);
+        yield return www.SendWebRequest();
+
+
+
+
+
+
+
+
+        // Selects a single Item
+        // openConnection();
+        // string query;
+        // query = "SELECT " + col + " FROM " + tableName + " WHERE " + condition + " = '" + conditionValue + "'";
+        // dbcmd = dbconn.CreateCommand();
+        // dbcmd.CommandText = query;
+        // reader = dbcmd.ExecuteReader();
+        // string result = "";
+
+        // while (reader.Read())
+        // {
+        //     result = reader.GetInt32(0).ToString(); // Fill array with all matches
+
+
+        // }
+        // closeConnection();
+        // return result;
+    }
+
+
+    public IEnumerator calculateBias(string sentenceId)
+    {
+
+
+        // Debug.Log(id);
+        WWWForm form = new WWWForm();
+        form.AddField("sentenceId", sentenceId);
+        UnityWebRequest www = UnityWebRequest.Post(calculateBiasURL, form);
+        yield return www.SendWebRequest();
+        // Selects a single Item
+        // openConnection();
+        // string query;
+        // query = "SELECT " + col + " FROM " + tableName + " WHERE " + condition + " = '" + conditionValue + "'";
+        // dbcmd = dbconn.CreateCommand();
+        // dbcmd.CommandText = query;
+        // reader = dbcmd.ExecuteReader();
+        // string result = "";
+
+        // while (reader.Read())
+        // {
+        //     result = reader.GetInt32(0).ToString(); // Fill array with all matches
+
+
+        // }
+        // closeConnection();
+        // return result;
+    }
+
+
+
+
+    // void openConnection()
+    // {
+    //     conn = "URI=file:" + Application.dataPath + "/game.db"; //Path to database.
+    //     dbconn = (IDbConnection)new SqliteConnection(conn);
+    //     dbconn.Open(); //Open connection to the database.
+    // }
+
+    // void closeConnection()
+    // {
+    //     reader.Close();
+    //     reader = null;
+    //     dbcmd.Dispose();
+    //     dbcmd = null;
+    //     dbconn.Close();
+    //     dbconn = null;
+    // }
+
+    public IEnumerator getDailyTopics()
+    {
+
+        UnityWebRequest www = UnityWebRequest.Get(getDailyTopicsURL);
+        yield return www.SendWebRequest();
+        string questions = www.downloadHandler.text;
+        string[] questionsArray = questions.Split('|');
+        Topics = questionsArray.Take(questionsArray.Count() - 1).ToArray();
+
+    }
+    public IEnumerator getWords(string sentenceId)
+    {
+
+
+
+        WWWForm form = new WWWForm();
+        form.AddField("sentenceId", sentenceId);
+        UnityWebRequest www = UnityWebRequest.Post(getWordsURL, form);
+        yield return www.SendWebRequest();
+        string Answers = www.downloadHandler.text;
+        wordsAnswer = Answers.Split('|');
+        wordsAnswer = wordsAnswer.Take(wordsAnswer.Count() - 1).ToArray();
+
+
+
+    }
+
+    public IEnumerator getSentences(string topic)
+    {
+
+
+
+        WWWForm form = new WWWForm();
+        form.AddField("topic", topic);
+        UnityWebRequest www = UnityWebRequest.Post(getSentencePackage, form);
+        yield return www.SendWebRequest();
+        string questions = www.downloadHandler.text;
+        string[] questionsArray = questions.Split('|');
+        questionsArray = questionsArray.Take(questionsArray.Count() - 1).ToArray();
+        indicesOnly = questionsArray.Where((x, i) => i % 3 == 0).ToArray();
+        questionOnly = questionsArray.Where((x, i) => i % 3 == 1).ToArray();
+        answers = questionsArray.Where((x, i) => i % 3 == 2).ToArray();
+
+        Debug.Log(indicesOnly[0]);
+        Debug.Log(questionOnly[0]);
+        Debug.Log(answers[0]);
+
+
+
+    }
+    public double calculateWordScore(String[] words, String[] answers)
+    {
+        //if no answers submitted
+        if (answers.Length == 0 && words.Length != 0)
+        {
+            return 0;
+            //if there is no biased words
+        }
+        else if (words.Length == 0)
+        {
+            return 0.5;
+        }
+        else
+        {
+
+            double occurences = 0;
+            foreach (string answer in answers)
+            {
+
+                if (Array.IndexOf(words, wordCleaner(answer)) != -1)
+                {
+                    occurences++;
+                }
+            }
+
+            return (occurences / words.Length) * 0.5;
+        }
+
+    }
+    public int star(double sentenceScore, double wordScore)
+    {
+
+        if (sentenceScore + wordScore > 0.7)
+        {
+            soundManager.Instance.starCollectSound();
+            return 1;
+        }
+        return 0;
+
+    }
+
+    public string wordCleaner(string word)
+    {
+        string pattern = @"([\w\-]+)";
+        var match = Regex.Match(word, pattern);
+        return match.Groups[1].Value;
+    }
+
+
+}

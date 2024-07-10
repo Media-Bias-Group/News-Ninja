@@ -1,0 +1,132 @@
+"id","gender","age","educationLevel","englishLevel","politicalSpectrum","newsConsumption","newsOutlets","userPk","createdAt"
+"38f26992-4e43-4018-a247-10399ffea13b",Female,22,High school graduate,Advanced,10,Several times per month,{},3,2023-03-06 18:18:31.593
+fa74fe22-43a7-4099-8964-0d0214e9cb56,Male,20,High school graduate,Advanced,13,Several times per day,"{""Fox News""}",4,2023-03-06 18:23:28.967
+edddd3d5-de19-4db4-ae08-25bbebaadedb,Male,48,Graduate work,Advanced,5,Several times per day,"{CNN,""Washington Post""}",5,2023-03-06 18:25:18.207
+"1e4be5dd-ea64-4f80-af4a-bb1d2f502fb4",Female,41,Bachelor’s degree,Advanced,9,Once per day,"{""CBS News""}",6,2023-03-06 18:25:21.658
+a8ef090e-beae-45fb-930e-b34bcdd17523,Female,49,Graduate work,Advanced,10,Once per day,"{""New York Times"",CNN}",7,2023-03-06 18:27:52.236
+"5381e483-51d1-415a-829e-1898780577a6",Female,21,Associate degree,Advanced,1,Several times per month,"{CNN,""New York Times""}",9,2023-03-06 18:28:45.031
+"4e9c8eca-544a-481d-a790-3246ca750381",Male,48,Bachelor’s degree,Advanced,0,Several times per day,"{""New York Times"",""Portland Mercury"",""Associated Press"",Reuters}",8,2023-03-06 18:28:59.153
+fb368f56-ba9b-4b6e-94d9-7a0d139d3569,Other,36,Vocational or technical school,Advanced,0,Once per day,"{""New York Times"",Twitter,Facebook}",10,2023-03-06 18:30:37.040
+"8c09369b-1c5b-4ab8-9fad-995e32cfd54f",Female,38,Graduate work,Advanced,12,Several times per week,{},13,2023-03-06 18:37:34.779
+"90f74b25-ddac-46c5-986f-15880a5a90a0",Female,32,Some college,Advanced,2,Several times per week,"{CNN,""New York Times""}",15,2023-03-06 18:40:44.148
+c93ed257-3342-4e17-8adc-70c10a0da615,Female,31,Bachelor’s degree,Advanced,17,Never or very rarely,"{""I do not watch/follow any news""}",14,2023-03-06 18:41:15.436
+"840b8db7-aa34-4778-949d-c6fd86eac0bb",Male,24,Bachelor’s degree,Advanced,1,Several times per month,{Reuters},16,2023-03-06 18:43:06.279
+"82f22597-2e9f-4246-a8e1-b4aac6dc5a4a",Female,52,Bachelor’s degree,Advanced,2,Several times per day,"{""CBS News""}",17,2023-03-06 18:45:54.266
+dee46205-972c-4136-9ace-fe60eea29379,Female,36,High school graduate,Intermediate,13,Once per day,"{""Fox News""}",18,2023-03-06 18:46:29.940
+"88c5e22a-60e1-41de-ad94-3ef354665580",Female,36,Bachelor’s degree,Advanced,13,Several times per week,{},19,2023-03-06 18:48:58.401
+be78678d-293b-4fcf-a732-76db38261a65,Female,36,Bachelor’s degree,Advanced,2,Several times per week,"{""New York Times"",CNN,""Huffington Post"",BuzzFeed}",21,2023-03-06 18:51:24.864
+"0e4c18c1-1f8b-4965-b40f-d9786ff219d6",Female,34,Graduate work,Advanced,2,Several times per day,"{N,""New York Times""}",20,2023-03-06 18:53:01.489
+"5059b6ae-80cf-40eb-b05f-ef42b43ea17e",Female,55,Graduate work,Advanced,10,Once per day,{Redacted},22,2023-03-06 18:55:19.309
+d9cc371a-154c-4f03-9fae-092aafbda7d4,Female,25,Bachelor’s degree,Advanced,12,Several times per month,"{""Fox News"",""CBS News"",BuzzFeed,""Local news""}",25,2023-03-06 18:57:34.105
+f04c32b3-1686-4fcc-ba0c-9b1e9d2beed7,Male,40,High school graduate,Advanced,5,Once per day,"{""New York Times"",CNN}",27,2023-03-06 18:57:38.440
+"7e8ef95d-b819-474d-bf4d-8e224ed7561e",Female,58,Some college,Advanced,2,Several times per day,"{MSNBC,CNN,Reuters,""Huffington Post"",""ABC News"",""CBS News"",""The Wall Street Journal"",""Time magazine""}",23,2023-03-06 18:57:43.015
+"74b2d148-cae1-4cb6-8890-d39265138c89",Female,20,High school graduate,Advanced,3,Several times per month,"{""New York Times"",""Washington Post""}",26,2023-03-06 18:58:08.602
+"62c0a0d1-662c-43cd-a4ff-e5cedb3f1ede",Female,35,High school graduate,Advanced,6,Several times per month,"{""Huffington Post"",""New York Post"",""USA Today"",""ABC News"",BuzzFeed,Vice}",29,2023-03-06 18:59:01.298
+"43104006-6bcf-46e6-b7aa-de9a11675b66",Male,39,High school graduate,Intermediate,13,Several times per week,{},28,2023-03-06 18:59:08.215
+ffe9799e-15f6-4c9d-8712-d0553df56968,Female,34,Graduate work,Advanced,15,Several times per week,"{""New York Times""}",32,2023-03-06 18:59:41.543
+f45703d8-87a1-4cde-8ad0-21fa5c80046a,Female,22,Bachelor’s degree,Advanced,0,Once per day,"{CNN,""New York Times""}",33,2023-03-06 19:00:05.254
+"411f9ca5-1d2b-482a-a12b-3582807744c7",Female,42,Graduate work,Advanced,1,Several times per day,"{CNN,""Public radio""}",31,2023-03-06 19:00:20.561
+"978e81bb-3e19-4bb4-aa43-5c26ce58028e",Female,45,High school graduate,Advanced,5,Several times per week,"{""New York Times"",""Huffington Post"",""New York Post"",""USA Today"",""CBS News"",""The Guardian""}",30,2023-03-06 19:00:50.567
+f56c1a60-aa6c-41ba-8c53-35f38af8ca34,Female,52,Some college,Advanced,0,Once per day,"{""Fox News""}",36,2023-03-06 19:01:30.726
+e4230fe9-055a-48f0-bd62-30c6cea08817,Female,25,Bachelor’s degree,Advanced,0,Once per day,"{""New York Times"",CNN}",24,2023-03-06 19:03:48.153
+"62483f7c-a3e8-4fe4-9c62-17410098d7f7",Female,43,Associate degree,Advanced,0,Several times per week,"{""CBS News"",""ABC News"",""USA Today"",""New York Post"",""Huffington Post"",Reuters,""The Wall Street Journal"",BuzzFeed,Vice,""Time magazine""}",39,2023-03-06 19:04:29.524
+"774653c5-82db-4a9a-a256-99e253485e5b",Female,38,I prefer not to say,Advanced,18,Several times per week,"{""Fox News"",Reuters,CNN,""New York Times""}",42,2023-03-06 19:04:29.817
+"76df12d6-b961-42bb-8fad-8840fc8b1b9f",Male,36,Some college,Advanced,6,Once per day,"{CNN,""New York Times"",NPR}",46,2023-03-06 19:05:12.945
+"833a04df-fa9d-44fc-bc75-50760446c962",Male,18,High school graduate,Advanced,8,Several times per week,{},47,2023-03-06 19:05:29.995
+ec4acf9d-7e6c-4274-a84b-8c466df2bb29,Male,39,Bachelor’s degree,Advanced,6,Once per day,"{""New York Times"",CNN,""Fox News"",Reuters,Breitbart,""Huffington Post"",""New York Post"",""The Washington Post"",""The Wall Street Journal"",""The Guardian"",Vice}",45,2023-03-06 19:05:31.186
+f670a7f5-ba8e-438c-8671-7a059443caed,Male,68,Some college,Advanced,10,Once per day,"{""I don't follow any news outlets""}",40,2023-03-06 19:05:32.230
+c584b37b-957c-4355-b7e1-9fab86c50cf8,Female,72,Some college,Advanced,11,Several times per day,"{""Fox News"",CNN,""AP News""}",44,2023-03-06 19:05:39.471
+"9b2f7045-1c93-4c33-8d0e-ccf89fe508df",Female,44,Graduate work,Advanced,5,Several times per day,"{CNN,""New York Times"",MSNBC,Reuters,""Huffington Post"",""USA Today"",""ABC News"",""CBS News"",""The Washington Post"",""The Wall Street Journal"",""Time magazine"",""Business Insider""}",43,2023-03-06 19:05:41.955
+"1224c1a6-de5e-4788-801c-6837dfb9b777",Male,57,Bachelor’s degree,Advanced,20,Once per day,"{NewsMax,""X22 Report""}",48,2023-03-06 19:06:34.747
+"90f9249f-8273-4910-9947-537c698e1309",Male,39,Bachelor’s degree,Advanced,6,Once per day,"{""Fox News"",""New York Times"",CNN,MSNBC,Breitbart,""Huffington Post"",""New York Post"",""The Washington Post"",""The Wall Street Journal"",""The Guardian""}",45,2023-03-06 19:06:39.630
+f4c4dcd9-68ba-4ff7-82b4-84b70d6d4f43,Male,39,Some college,Advanced,8,Several times per day,"{CNN,""New York Times""}",52,2023-03-06 19:07:06.916
+bc99bad3-2160-42e5-aad5-c652d088f0fb,Male,33,Some college,Advanced,6,Once per day,"{CNN,""Fox News""}",51,2023-03-06 19:07:25.705
+"08487466-e5b2-4cd1-9d77-c8716241ce97",Male,31,Bachelor’s degree,Advanced,5,Several times per week,"{Reuters,""USA Today""}",50,2023-03-06 19:07:32.941
+"2c99bf1b-156e-4e4f-bb36-fcba6847a9cc",Female,54,Associate degree,Advanced,15,Several times per day,"{""Google news""}",54,2023-03-06 19:08:46.902
+"16c67978-e774-4bb9-821e-8616c2ee98f7",Female,46,Some college,Advanced,1,Several times per day,{CNN},60,2023-03-06 19:09:59.441
+ce9a6c4b-022c-4d91-8a53-fc7c64b7bcfa,Male,50,Bachelor’s degree,Advanced,7,Several times per day,{CNN},58,2023-03-06 19:10:01.409
+adde9ea8-4bbe-408f-9aab-6863ea3c0889,Female,62,High school graduate,Advanced,15,Several times per week,{},55,2023-03-06 19:08:36.068
+"7ea8b0ab-5464-42ff-ac4f-de38f5ff31b0",Female,32,High school graduate,Advanced,0,Several times per week,"{""New York Times"",CNN}",57,2023-03-06 19:09:01.747
+"0437189b-b8f7-46ed-8036-c77a5f485a37",Female,25,Some college,Advanced,7,Several times per day,"{CNN,NBC,MSNBC}",56,2023-03-06 19:09:43.771
+e52033d1-3593-4514-bc02-567d06f0a98d,Other,38,Bachelor’s degree,Advanced,0,Several times per day,"{""New York Times""}",65,2023-03-06 19:10:24.690
+"2f5ab592-d91b-4599-be40-beba12f7c52e",Male,24,Some college,Advanced,18,Once per day,"{""I don’t follow any news outlets""}",61,2023-03-06 19:10:31.008
+b520dffb-c901-45fd-95bc-9ced69cb0bd9,Male,40,Graduate work,Advanced,10,Several times per day,"{""Local newspaper for my county""}",59,2023-03-06 19:10:47.459
+"8d6991c5-64fa-4fb6-9e04-ef9d519847be",Female,33,Some college,Advanced,10,Several times per week,"{""Fox News"",CNN}",67,2023-03-06 19:12:06.073
+"645dd589-faff-420f-a213-9e3f7064e271",Female,40,Graduate work,Advanced,0,Several times per day,"{""New York Times"",CNN}",66,2023-03-06 19:12:18.129
+"95a4b7f0-c94a-4072-adc1-31b415b63921",Male,27,Some college,Advanced,2,Several times per month,"{""Huffington Post"",""The Washington Post"",""The Wall Street Journal""}",71,2023-03-06 19:12:40.989
+bc59847e-40a0-4850-9372-6101b74ba686,Other,24,Bachelor’s degree,Advanced,0,Never or very rarely,"{""New York Times"",CNN,""Huffington Post"",""ABC News"",BuzzFeed}",74,2023-03-06 19:12:42.525
+eb9ed1a0-585d-44a2-b0b4-6145cdec54c4,Male,52,Vocational or technical school,Advanced,0,Several times per week,"{Reuters,CNN,MSNBC}",73,2023-03-06 19:13:03.691
+"65633881-c0ad-405f-b6c3-e7a5f1545e93",Female,29,Bachelor’s degree,Advanced,0,Several times per day,"{""Reddit, Phillip DeFranco""}",75,2023-03-06 19:13:07.097
+c8e2e31a-69cd-4ea6-a4ea-01437b0665d6,Female,24,High school graduate,Advanced,0,Once per day,{CNN},77,2023-03-06 19:13:18.421
+"55fe929b-3dcc-4186-976a-96721048b173",Female,31,Some college,Advanced,8,Once per day,{CNBC},76,2023-03-06 19:13:23.892
+a9a1e939-9451-4029-aede-7b081bbc02f4,Male,59,Associate degree,Advanced,9,Never or very rarely,{},69,2023-03-06 19:13:26.131
+afdf588e-e37e-4fc0-b293-0bc1d8bb7e14,Male,21,Bachelor’s degree,Advanced,4,Once per day,"{CNN,Reuters}",81,2023-03-06 19:13:32.776
+b80a17d4-4122-4f6c-8cde-4f4a660f7f64,Male,29,Associate degree,Advanced,19,Once per day,"{""New York Times"",""Fox News""}",82,2023-03-06 19:13:35.431
+"0e0bda25-e968-480a-9b86-100e0790fea7",Male,34,Bachelor’s degree,Advanced,8,Several times per week,{},79,2023-03-06 19:14:05.254
+"043ebb29-afed-48bb-9258-af34fc2b32ab",Female,25,High school graduate,Advanced,10,Never or very rarely,"{""I don't follow any news outlets""}",78,2023-03-06 19:14:42.680
+"78895195-72cc-4468-8063-730cc17014da",Female,53,High school graduate,Intermediate,11,Several times per week,"{""CBS News"",""Fox News""}",80,2023-03-06 19:14:49.537
+"567e7a6f-6844-4f6a-ac75-2b8b3acb1959",Male,23,Bachelor’s degree,Advanced,1,Once per day,"{CNN,""New York Times"",""Fox News""}",83,2023-03-06 19:14:56.180
+"624bc18f-1575-4b93-b6e5-9483643c2971",Male,57,Graduate work,Advanced,15,Several times per day,"{""Associated Press"",CNN,AP}",64,2023-03-06 19:15:06.865
+"4d020e8e-7430-4fc8-874c-d1c4c42a3834",Female,48,Graduate work,Advanced,0,Once per day,"{""New York Times""}",84,2023-03-06 19:15:15.817
+a888c372-3c7c-4c04-812a-96b8fa832ccc,Male,26,High school graduate,Advanced,3,Once per day,"{""I don't actively follow any outlets""}",86,2023-03-06 19:16:02.718
+"16eec067-e184-4abc-a1ec-cd93a6ae1a23",Female,24,Bachelor’s degree,Advanced,0,Once per day,"{""New York Times""}",88,2023-03-06 19:16:10.127
+b9f24f77-afc0-4a8b-8386-4e7b880787d8,Female,44,High school graduate,Advanced,11,Several times per month,"{""Local news channel""}",87,2023-03-06 19:16:59.263
+"7bf1820a-8658-4471-b315-fac78156dee2",Male,29,High school graduate,Advanced,14,Several times per month,{CNN},85,2023-03-06 19:17:10.270
+"9b39ba5a-4f4b-42a8-9627-68f7212b27ee",Male,24,Bachelor’s degree,Intermediate,7,Several times per week,"{""New York Times"",CNN,Reuters}",90,2023-03-06 19:17:31.487
+d235d5a6-c69b-4bb9-8893-f481ec6143e8,Female,41,Graduate work,Advanced,0,Once per day,{},91,2023-03-06 19:17:58.114
+ca3fbac3-20f5-4555-99aa-0c3c2e373d18,Male,30,Some college,Advanced,4,Several times per month,"{CNN,""New York Times""}",92,2023-03-06 19:18:02.005
+d8faf346-f069-410e-8022-e9aa57686191,Female,56,High school graduate,Advanced,14,Several times per week,"{""Fox News""}",93,2023-03-06 19:18:06.460
+"749d5f53-507e-4ea7-80ba-74d10b3c433c",Male,34,High school graduate,Advanced,20,Several times per week,"{""Fox News""}",95,2023-03-06 19:19:23.370
+a90aa521-a1c3-4de1-8642-87164afbfa02,Male,21,High school graduate,Advanced,14,Once per day,{},94,2023-03-06 19:19:27.462
+"8c4ab743-5dc5-4f53-a723-073bf605cc19",Male,35,Graduate work,Advanced,4,Several times per day,"{CNN,Msnbc}",100,2023-03-06 19:20:20.098
+add34fda-d8cf-42a5-80e8-2d3a96a06427,Male,60,Some college,Advanced,16,Several times per day,"{Breitbart,""The Federalist""}",98,2023-03-06 19:20:39.273
+"2739dfb5-81da-400a-8533-230a288883c7",Female,27,Bachelor’s degree,Advanced,0,Never or very rarely,{CNN},70,2023-03-06 19:20:40.301
+"7d61b89d-c413-49ce-837a-65424dce4705",Male,25,Bachelor’s degree,Advanced,14,Several times per week,"{""Fox News"",""New York Times""}",99,2023-03-06 19:20:56.394
+"467f2f35-c61b-4717-bea2-d9b952082f69",Male,32,High school graduate,Advanced,7,Several times per week,"{CNN,MSNBC,Reuters,Vice}",97,2023-03-06 19:21:11.939
+f79fe806-155b-4ce0-ac43-bd78846b1e69,Female,22,High school graduate,Intermediate,9,Once per day,"{CNN,""New York Times""}",101,2023-03-06 19:21:32.449
+"4915aece-30a2-4c4a-9c3d-c52ca94a7bc3",Female,36,Associate degree,Advanced,11,Several times per week,{},103,2023-03-06 19:22:52.437
+"129c34d7-2aa8-43ba-8b12-ada21ceb897c",Male,31,Doctoral degree,Advanced,10,Once per day,{Reuters},105,2023-03-06 19:23:08.163
+"64520f16-ac90-4fc2-ba5c-614902256e46",Male,21,High school graduate,Advanced,10,Several times per month,{},102,2023-03-06 19:23:12.641
+"8784e0a6-341e-48e7-aa01-d7491d2d77c3",Male,29,High school graduate,Advanced,10,Never or very rarely,"{""I don’t follow any""}",104,2023-03-06 19:24:05.218
+"52b128f0-8361-4d7d-bcc5-ba67c4d6fe33",Male,51,Some college,Advanced,17,Several times per day,{Newsmax},114,2023-03-06 19:28:14.286
+"7f496c88-7e66-46be-916d-acbbcddce8cc",Male,50,Bachelor’s degree,Advanced,20,Several times per month,{},107,2023-03-06 19:28:25.065
+"579854e6-a70e-42c6-bfe9-8d31df553f7d",Male,22,Associate degree,Advanced,17,Several times per month,"{""I don't follow any news outlet""}",121,2023-03-06 19:34:48.567
+"99479047-bbcf-4d49-88e3-8d5dc95ed596",Male,34,Associate degree,Advanced,12,Once per day,{},124,2023-03-06 19:51:46.883
+b729c84e-a061-4a3e-a571-cd195a104d46,Male,40,Bachelor’s degree,Advanced,17,Several times per day,"{""Fox News"",CNN}",106,2023-03-06 19:23:31.958
+"06377c85-3309-43dd-b9f5-f7ca2b8f661d",Female,22,Bachelor’s degree,Advanced,0,Several times per month,"{""Daily mail""}",109,2023-03-06 19:24:28.914
+"957b5c49-6adc-461b-bb53-52d55332c404",Male,27,Bachelor’s degree,Advanced,4,Once per day,{NPR},111,2023-03-06 19:25:40.797
+"2f331d0b-829f-414a-b6a2-8f618f17580f",Male,29,Associate degree,Advanced,5,Several times per week,{},112,2023-03-06 19:26:10.649
+"0c2671a1-4510-4e95-b139-fc578e020b30",Male,25,Associate degree,Advanced,0,Several times per day,"{""New York Times""}",113,2023-03-06 19:27:41.986
+"49cc14da-9934-45ad-b7f6-3cdf292a953c",Female,22,Associate degree,Intermediate,10,Several times per week,"{CNN,""New York Times""}",118,2023-03-06 19:31:19.712
+bc80ef81-732d-419d-a539-9d5ec10b77ec,Female,53,Graduate work,Advanced,4,Several times per day,"{""New York Times""}",125,2023-03-06 19:37:46.656
+aec78bad-8970-4814-9639-2bd0ab0614d9,Male,22,Some college,Advanced,10,Several times per week,"{""aggregate websites such as google news. The source doesn't really matter""}",122,2023-03-06 19:55:19.689
+"4bcf96c2-dd81-4c0b-a9f0-1f350a7e630c",Female,73,Bachelor’s degree,Advanced,1,Several times per day,"{""New York Times"",CNN,MSNBC,Reuters,""ABC News"",""CBS News"",""The Washington Post"",""The Guardian""}",108,2023-03-06 19:25:07.418
+"7a527f89-6e56-41dd-8c40-5d40ee39b14c",Male,66,Bachelor’s degree,Advanced,6,Several times per day,"{""Fox News"",""New York Times"",CNN}",110,2023-03-06 19:26:00.988
+"2c5dbd28-caea-4aef-a72d-11326856be4e",Male,47,Some college,Advanced,0,Several times per month,"{""New York Times"",""The Washington Post""}",115,2023-03-06 19:29:04.751
+"72582981-57fe-4d13-8b6c-c3633de37e76",Male,36,High school graduate,Advanced,2,Several times per week,"{NPR,CNN}",116,2023-03-06 19:29:20.550
+"41b3c601-5067-420b-933c-923098376f69",Female,48,Graduate work,Advanced,16,Several times per week,"{""Fox News"",""ABC News"",""CBS News"",BuzzFeed}",123,2023-03-06 19:36:15.170
+"9e033b8e-6093-40c1-8ded-1d10b6b5e9f4",Male,62,Some college,Advanced,7,Once per day,{CNN},127,2023-03-06 19:59:28.200
+"5f729d2a-24f7-410f-a034-584bf133c9b4",Male,33,Bachelor’s degree,Advanced,8,Several times per day,"{""New York Times"",CNN}",128,2023-03-06 20:03:54.544
+ad74f15d-cbae-4c01-888d-2b343dcfa615,Male,32,Graduate work,Advanced,2,Several times per week,"{""New York Times"",""Fox News""}",129,2023-03-06 20:12:53.014
+f4dfd319-6870-492f-ae3e-dc3216903231,Male,36,High school graduate,Advanced,5,Several times per day,"{CNN,PBS}",131,2023-03-06 20:16:51.999
+cb246b90-126e-4fdb-86d4-8f98eb75b87e,Female,57,Bachelor’s degree,Advanced,4,Several times per day,"{CNN,""New York Times""}",132,2023-03-06 20:22:46.839
+"5c29e42f-0e1c-4879-ac2d-90938dceb212",Male,46,Some college,Advanced,11,Several times per day,"{""The Hill"",""Business Insider"",""The Guardian"",""The Washington Post"",""New York Post"",Reuters,""Fox News"",NPR}",133,2023-03-06 20:25:09.347
+f6e6a878-6696-4551-b036-b81abd4c6930,Female,28,High school graduate,Advanced,0,Once per day,{},134,2023-03-06 20:27:33.679
+a9d72216-3890-40e0-97c2-61b15b70e9cd,Male,51,Associate degree,Advanced,3,Several times per day,{},135,2023-03-06 20:36:04.322
+"93e12bf4-d650-4f31-9e19-fdf558337e82",Male,51,Bachelor’s degree,Advanced,10,Several times per week,{Podcast},136,2023-03-06 20:36:04.416
+"5580f4a6-f9cf-4d72-a240-b09458af648b",Male,25,Some college,Advanced,15,Never or very rarely,{},137,2023-03-06 20:42:35.925
+"086e88dc-8b4b-42bb-ae56-9cf8387e1876",Male,30,Bachelor’s degree,Advanced,10,Several times per month,{CNN},138,2023-03-06 20:48:24.617
+"210f8858-c353-4794-8173-aa7e08182159",Female,19,Some college,Advanced,10,Once per day,"{""New York Times"",CNN,""New York Post"",""ABC News"",""CBS News""}",139,2023-03-06 21:01:46.939
+d87db08e-e1b4-4a5f-8f03-41c924f70c34,Male,19,High school graduate,Advanced,12,Once per day,"{""Fox News"",""New York Times"",CNN,""The Wall Street Journal""}",140,2023-03-06 21:11:53.667
+"08e91635-0cd6-422b-8be0-303bb4f914ca",Male,63,Bachelor’s degree,Advanced,14,Once per day,{Cbs},141,2023-03-07 16:03:56.272
+"7c010c95-789b-4af7-8b44-8372c08bb067",Female,74,Associate degree,Advanced,0,Several times per day,{CNN},143,2023-03-07 16:09:01.153
+dd5230d1-706a-4483-9fb6-520157f56b42,Female,22,Bachelor’s degree,Advanced,6,Several times per week,"{""New York Times""}",142,2023-03-07 16:11:13.499
+b9429489-8fb4-4bc2-b4c1-867ade1e1944,Female,21,Bachelor’s degree,Advanced,8,Several times per day,"{""New York Times""}",144,2023-03-07 16:21:06.634
+"408172ad-3080-41be-b2d3-d2fbf38663a5",Male,47,Bachelor’s degree,Advanced,4,Several times per day,"{CNN,""New York Times"",MSNBC,""The Washington Post"",Vice}",145,2023-03-07 16:23:06.354
+f1a33051-cb04-4007-af3c-40d1fca5edd6,Male,50,Some college,Advanced,2,Several times per day,"{CNN,""New York Times"",""The Washington Post"",""The Guardian""}",146,2023-03-07 16:27:03.051
+"793000aa-8a74-4199-ade1-bd9d2a7ec41d",Male,55,Bachelor’s degree,Advanced,18,Once per day,{BBC},147,2023-03-07 16:27:38.148
+bca4d129-6dc2-44fc-80f3-2a1733f278a9,Male,32,Bachelor’s degree,Advanced,10,Several times per day,{},148,2023-03-07 16:33:27.377
+"3e724399-2d00-4e5a-83e0-f0bf86a056aa",Male,37,Bachelor’s degree,Advanced,5,Several times per month,"{""Fox News""}",149,2023-03-07 16:37:30.549
+ef1d0df2-06c6-4ecf-8b0e-897f2bb6884d,Male,50,Some college,Advanced,9,Once per day,"{Vice,""New York Times""}",150,2023-03-07 16:41:21.725
+"1524b442-a7e2-40eb-adbc-e37ccbc06840",Female,48,Some college,Advanced,14,Once per day,{CBS},151,2023-03-07 20:18:58.207
+"0d39c996-9ac5-4c8c-9a02-f8a7d80c07a4",Male,21,High school graduate,Advanced,9,Once per day,"{CNN,""ABC News"",Vice}",153,2023-03-07 20:32:53.883
