@@ -36,4 +36,6 @@ The dataset will be open source. A link with all details and contact information
 The dataset will not be maintained as it captures the first test of NewsNinja at a specific point in time. However, new datasets will arise from further iterations. Those will be linked in this repository. Please cite the NewsNinja paper if you use the dataset and contact us if you're interested in more information or joining the project.
 
 
-S. Hinterreiter, T. Spinde, S. Oberdörfer, I. Echizen, M. E. Latoschik. 2024. News Ninja: Gamified Annotation Of Linguistic Bias In Online News. CHI PLAY '24. ACM Hum.-Comput. Interact., Vol. 8. https://doi.org/10.1145/3677092
+Smi Hinterreiter, Timo Spinde, Sebastian Oberdörfer, Isao Echizen, and Marc Erich Latoschik. 2024. News
+Ninja: Gamified Annotation Of Linguistic Bias In Online News. In Proceedings of ACM Hum.-Comput. Interact.,
+Vol. 8, No. CHI PLAY (CHI PLAY ’24). ACM, New York, NY, USA, 32 pages. https://doi.org/10.1145/3677092
