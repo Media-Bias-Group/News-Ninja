@@ -5,19 +5,21 @@ This repository includes all files relevant to the paper "News Ninja: Gamified A
 Recent research shows that visualizing linguistic bias mitigates its negative effects. However, reliable automatic detection methods to generate such visualizations require costly, knowledge-intensive training data. To facilitate data collection for media bias datasets, we present News Ninja, a game employing data-collecting game mechanics to generate a crowdsourced dataset. Before annotating sentences, players are educated on media bias via a tutorial. Our findings show that datasets gathered with crowdsourced workers trained on News Ninja can reach significantly higher inter-annotator agreements than expert and crowdsourced datasets with similar data quality. As News Ninja encourages continuous play, it allows datasets to adapt to the reception and contextualization of news over time, presenting a promising strategy to reduce data collection expenses, educate players, and promote long-term bias mitigation.
 
 ## Content
-News Ninja Source Code
-News Ninja Dataset
-Video of News Ninja 
+- [News Ninja Source Code](/News%20Ninja%20Dataset)
+
+- [News Ninja Dataset](/News%20Ninja%20Source%20Code)
+
+- [Video of News Ninja](NewsNinjaStudyDemoVideo.mp4)
 
 ## News Ninja Dataset
-This dataset was created through player annotations in the News Ninja Game made by ANON. Its goal is to improve the detection of linguistic media bias. Support came from ANON. None of the funders played any role in the dataset creation process or publication-related decisions.
+This dataset was created through player annotations in the News Ninja Game by Hinterreiter, Spinde, Oberdörfer, Echizen, and Latoschik (2024). Its goal is to improve the detection of linguistic media bias. Support came from the Hanns-Seidel Foundation, the German Academic Exchange Service (DAAD), and the XR Hub Bavaria/Würzburg and was partially supported by JST CREST Grant JPMJCR20D3 Japan. None of the funders played any role in the dataset creation process or publication-related decisions.
 
 The dataset includes sentences with binary bias labels (processed, biased or not biased) as well as the annotations of single players used for the majority vote. It includes all game-collected data. All data is completely anonymous. The dataset does not identify sub-populations or can be considered sensitive to them, nor is it possible to identify individuals.
 
 Some sentences might be offensive or triggering as they were taken from biased or more extreme news sources. The dataset contains topics such as violence, abortion, and hate against specific races, genders, religions, or sexual orientations.
 
 ### Description of the Data Files
-This repository contains the datasets for the anonymous News Ninja submission. The tables contain the following data:
+This folder contains the datasets for the CHI Play 2024 News Ninja submission. The tables contain the following data:
 
 **ExportNewsNinja.csv:** Contains 370 BABE sentences and 150 new sentences with their text (sentence), words labeled as biased (words), BABE ground truth (ground_Truth), and the sentence bias label from the player annotations (majority_vote). The first 370 sentences are re-annotated BABE sentences, and the following 150 sentences are new sentences.
 
@@ -32,3 +34,6 @@ Data was collected through interactions with the NewsNinja game. All participant
 The dataset will be open source. A link with all details and contact information will be provided upon acceptance. No third parties are involved.
 
 The dataset will not be maintained as it captures the first test of NewsNinja at a specific point in time. However, new datasets will arise from further iterations. Those will be linked in this repository. Please cite the NewsNinja paper if you use the dataset and contact us if you're interested in more information or joining the project.
+
+
+S. Hinterreiter, T. Spinde, S. Oberdörfer, I. Echizen, M. E. Latoschik. 2024. News Ninja: Gamified Annotation Of Linguistic Bias In Online News. CHI PLAY '24. ACM Hum.-Comput. Interact., Vol. 8. https://doi.org/10.1145/3677092
