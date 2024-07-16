@@ -5,9 +5,9 @@ This repository includes all files relevant to the paper "News Ninja: Gamified A
 Recent research shows that visualizing linguistic bias mitigates its negative effects. However, reliable automatic detection methods to generate such visualizations require costly, knowledge-intensive training data. To facilitate data collection for media bias datasets, we present News Ninja, a game employing data-collecting game mechanics to generate a crowdsourced dataset. Before annotating sentences, players are educated on media bias via a tutorial. Our findings show that datasets gathered with crowdsourced workers trained on News Ninja can reach significantly higher inter-annotator agreements than expert and crowdsourced datasets with similar data quality. As News Ninja encourages continuous play, it allows datasets to adapt to the reception and contextualization of news over time, presenting a promising strategy to reduce data collection expenses, educate players, and promote long-term bias mitigation.
 
 ## Content
-- [News Ninja Source Code](/News%20Ninja%20Dataset)
+- [News Ninja Source Code](/News%20Ninja%20Code)
 
-- [News Ninja Dataset](/News%20Ninja%20Source%20Code)
+- [News Ninja Dataset](/News%20Ninja%20Source%20Dataset)
 
 - [Video of News Ninja](NewsNinjaStudyDemoVideo.mp4)
 
